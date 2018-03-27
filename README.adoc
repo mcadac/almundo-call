@@ -39,15 +39,22 @@ image::/images/DeploymentDiagram.jpg?raw=true[deplotment_diagram]
 ## Instrucciones para despliegue
 
 *1.* Descargar el codigo fuente *https://github.com/mcadac/almundo-call.git*
+
 *2.* Desde consola ingresar a la carpeta del proyeco *almundo-call-center*
+
 *3.* Ejecutar desde consola mvn spring-boot:run
+
 *4.* Desde consola ingresar a la carpeta del proyecto *almundo-call-center-dispatcher*
+
 *5.* Ejecutar desde consola mvn spring-boot:run
+
 *6.* Desde postman u otra herramienta similiar (curl) ejecutar un request de tipo POST y JSON
+
         {
           "content":"hola",
           "attempt": 1
         }
+        
 *7.* El servicio de colas (RabbitMQ) se encuentra desplegado en *Heroku*, por lo tanto no es necesario instalar RabbitMQ amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn 
 
        
