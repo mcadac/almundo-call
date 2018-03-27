@@ -74,6 +74,7 @@ Para solucionar el error anterior es necesario establecer la variable JAVA_HOME 
 ## Pruebas con Heroku 
 
 Los servicios fueron desplegados en Heroku simulando un ambiente productivo:
+*Nota :* La primera petición puede presentar demora, debido a que *Heroku* suspende los servicios al no recibir peticiones.
 
 *almundo-call-center-service :* https://almundo-call-center-service.herokuapp.com/v1/status 
                                                         o 
