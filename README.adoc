@@ -64,6 +64,12 @@ image::/images/DeploymentDiagram.jpg?raw=true[deplotment_diagram]
         
 *7.* El servicio de colas (RabbitMQ) se encuentra desplegado en *Heroku*, por lo tanto no es necesario instalar RabbitMQ *amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn*
 
+## Posibles Errores
+
+*1.* Failed to execute goal org.apache.maven-plugins:maven-compiler-plugin:3.7.0.0:compile (default-compile) on project almundo-call-center: Faltal error compiling: invalid flag: -parameters.
+
+Para solucionar el error anterior es necesario establecer la variable JAVA_HOME con la versión 1.8 de Java e.g *export JAVA_HOME="C:/Program Files/Java/jdk1.8.0_112"*
+
 
 ## Pruebas con Heroku 
 
