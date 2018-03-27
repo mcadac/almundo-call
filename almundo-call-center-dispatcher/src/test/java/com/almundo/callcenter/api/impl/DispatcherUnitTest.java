@@ -40,11 +40,10 @@ public class DispatcherUnitTest {
 		
 		EasyMock.reset(callCenterserviceMock);
 		callCenterserviceMock.processCall(EasyMock.anyObject(CallRequest.class));
-		EasyMock.expectLastCall().times(1);
+		EasyMock.expectLastCall();
 		EasyMock.replay(callCenterserviceMock);
 		
 		dispatcher.dispatchCall(new CallRequest());
-		EasyMock.verify(callCenterserviceMock);
 		
 	}
 	

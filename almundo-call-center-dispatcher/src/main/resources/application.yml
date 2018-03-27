@@ -1,35 +1,34 @@
 #--------------------------------------------------#
 # Application properties
-
 # @Author Camilo Espitia - dcespitiam@gmail.com
 # @Version 1.0
 #--------------------------------------------------#
 
-## Spring boot server configuration ##
+## Spring boot server configuration
 server:
-	port: 4520
+  port: 4520
 
 ##Concurrent configuration
 dispatcher:
-	fixed:
-		threads: 10
+  fixed:
+    threads: 10
 
 ## Queues configuration and RabbitMQ
 spring:
-	rabbitmq:
-		addresses: amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn
+  rabbitmq:
+    addresses: amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn
 
 queue:
-	name:
-		call:
-			request: almundo.call.request
-			response: almundo.call.response
+  name: 
+    call:
+      request: almundo.call.request
+      response: almundo.call.response
 
 ## Call center configuration
 quantity:
-	supervisors: 3
-	operators: 5
-	directors: 2
+  supervisors: 3
+  operators: 5
+  directors: 2
 
 
 

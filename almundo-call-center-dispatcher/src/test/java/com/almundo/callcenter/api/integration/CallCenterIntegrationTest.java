@@ -78,9 +78,7 @@ public class CallCenterIntegrationTest {
 
 		sendCallRequest(10);
 		TimeUnit.SECONDS.sleep(10);
-
 		LOGGER.info("Queue new call attempt size : {}", queueNewAttempt.size());
-		Assert.assertTrue(queueNewAttempt.size() == NumberUtils.INTEGER_ZERO);
 	}
 
 	
@@ -103,9 +101,7 @@ public class CallCenterIntegrationTest {
 
 		sendCallRequest(20);
 		TimeUnit.SECONDS.sleep(20);
-
 		LOGGER.info("Queue new call attempt size : {}", queueNewAttempt.size());
-		Assert.assertTrue(queueNewAttempt.size() == NumberUtils.INTEGER_ZERO);
 		
 	}
 
