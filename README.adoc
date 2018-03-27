@@ -1,0 +1,12 @@
+# Almundo-call-center
+
+*Autor :* Camilo Espitia
+
+*Version :* 1.0
+
+*Java :* 1.8
+
+## Definición y diseño
+
+Con los objetivos de bajo nivel de acomplamiento, escalabilidad y disponibilidad, este proyecto se diseño e implemento pensando
+en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern*
