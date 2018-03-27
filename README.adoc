@@ -4,9 +4,33 @@
 
 *Version :* 1.0
 
+## Tecnologias
+
 *Java :* 1.8
+
+*Spring boot* 
+
+*Spring amqp*
+
+*RabbitMQ*
+
 
 ## Definición y diseño
 
 Con los objetivos de bajo nivel de acomplamiento, escalabilidad y disponibilidad, este proyecto se diseño e implemento pensando
-en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern*
+en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern* como lo podemos ver en el diagrama de componentes.
+
+image::/images/ComponentDiagram.jpg?raw=true[Component_diagram]
+
+Con lo anterior se evidencia que entre los servicios existe un nivel desacoplamiento e independencia. Con respecto a la escalabilidad y disponibilidad se puede ver reflejada en el siguiente diagrama de despligue, el cual permite realizar mantenimientos por servicios, sin presentar indisponibilidad del 100% del sistema.
+
+
+image::/images/DeploymentDiagram.jpg?raw=true[deplotment_diagram]
+
+## Solución de requerimientos
+
+*1.Procesamiento concurrente :* Con la implementación del patron presentado en el punto anterior se cumple este objetivo en conjunto con la configuración de un *Executor* de Java para la manipulación y restricción de hilos, el cual puede ser configurado en los properties (application.yml) del servicio *almundo-call-center-dispatcher* 
+
+*2.Integration test :* En el servicio *almundo-call-center-dispatcher* se pueden encontrar las pruebas unitarias correspondientes y de integración.
+
+*3.Solución cuando se llega al limite de hilos o ningun empleado disponible :* En el primer caso se mantendra el mensaje a la espera de un empleado disponible y en el segun caso se escribira nuevamente a la cola un nuevo intento.
