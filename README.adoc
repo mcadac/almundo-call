@@ -34,3 +34,45 @@ image::/images/DeploymentDiagram.jpg?raw=true[deplotment_diagram]
 *2.Integration test :* En el servicio *almundo-call-center-dispatcher* se pueden encontrar las pruebas unitarias correspondientes y de integración.
 
 *3.Solución cuando se llega al limite de hilos o ningun empleado disponible :* En el primer caso se mantendra el mensaje a la espera de un empleado disponible y en el segun caso se escribira nuevamente a la cola un nuevo intento.
+
+
+## Instrucciones para despliegue
+
+*1.* Descargar el codigo fuente *https://github.com/mcadac/almundo-call.git*
+
+*2.* Desde consola ingresar a la carpeta del proyeco *almundo-call-center*
+
+*3.* Ejecutar desde consola mvn spring-boot:run
+
+*4.* Desde consola ingresar a la carpeta del proyecto *almundo-call-center-dispatcher*
+
+*5.* Ejecutar desde consola mvn spring-boot:run
+
+*6.* Desde postman u otra herramienta similiar (curl) ejecutar un request de tipo POST y JSON *https://localhost:4519/v1/send*
+
+        {
+          "content":"hola",
+          "attempt": 1
+        }
+        
+*7.* El servicio de colas (RabbitMQ) se encuentra desplegado en *Heroku*, por lo tanto no es necesario instalar RabbitMQ *amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn*
+
+
+## Pruebas con Heroku 
+
+Los servicios fueron desplegados en Heroku simulando un ambiente productivo:
+
+*almundo-call-center-service :* https://almundo-call-center-service.herokuapp.com/v1/status 
+                                                        o 
+                                https://almundo-call-center-service.herokuapp.com/v1/send
+
+*Queue component :* amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn
+
+*almundo-call-center-dispatcher :* https://call-center-dispatcher.herokuapp.com/v1/status
+
+
+
+
+       
+
+
