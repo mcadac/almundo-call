@@ -21,7 +21,9 @@ Con los objetivos de bajo nivel de acomplamiento, escalabilidad y disponibilidad
 en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern* como lo podemos ver en el diagrama de componentes.
 
 *CallCenterService* = *almundo-call-center* project
+
 *Message queue* = *RabbitMQ* Deployed in Heroku
+
 *CallCenterProvider* = *almundo-call-center-dispatcher* project
 
 
