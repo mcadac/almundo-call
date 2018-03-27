@@ -9,4 +9,11 @@
 ## Definición y diseño
 
 Con los objetivos de bajo nivel de acomplamiento, escalabilidad y disponibilidad, este proyecto se diseño e implemento pensando
-en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern*
+en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern* como lo podemos ver en el diagrama de componentes.
+
+image::/images/ComponentDiagram.jpg?raw=true[Component_diagram]
+
+Con lo anterior se evidencia a un alto nivel servicios que pueden estar desacoplados e independientes, la escalabilidad y disponibilidad se puede ver reflejada un poco mas en el siguiente diagrama de despligue
+
+
+image::/images/DeploymentDiagram.jpg?raw=true[deplotment_diagram]
