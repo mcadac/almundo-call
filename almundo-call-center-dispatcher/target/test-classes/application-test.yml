@@ -1,0 +1,18 @@
+#--------------------------------------------------#
+# Application properties for integration test
+
+# @Author Camilo Espitia - dcespitiam@gmail.com
+# @Version 1.0
+#--------------------------------------------------#
+
+## Dispatcher threads
+dispatcher:
+  fixed:
+    threads: 10
+
+
+## Call agents quantity
+quantity:
+  supervisors: 3
+  operators: 5
+  directors: 2

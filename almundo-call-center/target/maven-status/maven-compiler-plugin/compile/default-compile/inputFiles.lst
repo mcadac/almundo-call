@@ -1,0 +1,9 @@
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/api/impl/CallQueueSender.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/model/ResponseMessage.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/AlmundoServiceApplication.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/api/impl/CallResponseListener.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/model/RequestMessage.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/model/ServiceConstant.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/controller/AlmundoServiceController.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/api/IQueueListener.java
+/Users/McadaC/Documents/Projects/Almundo/almundo-call-center/src/main/java/com/almundo/service/api/IQueueSender.java

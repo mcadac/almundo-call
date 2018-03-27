@@ -1,0 +1,21 @@
+#--------------------------------------------------#
+# Almundo service Application properties
+#
+# @Author Camilo Espitia - dcespitiam@gmail.com
+# @Version 1.0
+#--------------------------------------------------#
+
+## Spring boot server configuration ##
+server:
+  port: 4519
+
+## Rabbit MQ configuration
+spring:
+  rabbitmq:
+    addresses: amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn
+
+queue:
+  name:
+    call:
+      request: almundo.call.request
+      response: almundo.call.response
