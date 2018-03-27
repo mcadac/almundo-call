@@ -62,11 +62,13 @@ image::/images/DeploymentDiagram.jpg?raw=true[deplotment_diagram]
 
 Los servicios fueron desplegados en Heroku simulando un ambiente productivo:
 
-*almundo-call-center-service :* https://almundo-call-center-service.herokuapp.com/v1/status o https://almundo-call-center-service.herokuapp.com/v1/send
+*almundo-call-center-service :* https://almundo-call-center-service.herokuapp.com/v1/status 
+                                                        o 
+                                https://almundo-call-center-service.herokuapp.com/v1/send
 
 *Queue component :* amqp://avuuvwhn:rqBzdykh05azCEtT-N1tVi1F-vjcoe3n@skunk.rmq.cloudamqp.com/avuuvwhn
 
-*almundo-call-center-dispatcher :* https://call-center-dispatcher.herokuapp.com/
+*almundo-call-center-dispatcher :* https://call-center-dispatcher.herokuapp.com/v1/status
 
 
 
