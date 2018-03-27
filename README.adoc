@@ -20,6 +20,11 @@
 Con los objetivos de bajo nivel de acomplamiento, escalabilidad y disponibilidad, este proyecto se diseño e implemento pensando
 en una arquitectura de microservicios, haciendo uso de patrones de diseño y arquitectonicos como el *Asynchronous Queuing pattern* como lo podemos ver en el diagrama de componentes.
 
+*CallCenterService* = *almundo-call-center* project
+*Message queue* = *RabbitMQ* Deployed in Heroku
+*CallCenterProvider* = *almundo-call-center-dispatcher* project
+
+
 image::/images/ComponentDiagram.jpg?raw=true[Component_diagram]
 
 Con lo anterior se evidencia que entre los servicios existe un nivel desacoplamiento e independencia. Con respecto a la escalabilidad y disponibilidad se puede ver reflejada en el siguiente diagrama de despligue, el cual permite realizar mantenimientos por servicios, sin presentar indisponibilidad del 100% del sistema.
