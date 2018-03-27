@@ -93,6 +93,13 @@ public class CallRequest implements Serializable {
 		this.content = content;
 	}
 	
+	/**
+	 * Add an attempt
+	 */
+	public void addAttempt(){
+		attempt = Integer.sum(attempt, 1);
+	}
+	
 	/*
 	 * (non-Javadoc)
 	 * @see java.lang.Object#toString()

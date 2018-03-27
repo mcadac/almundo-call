@@ -2,6 +2,7 @@ package com.almundo.callcenter.api.impl;
 
 import java.util.Optional;
 
+import org.apache.commons.lang3.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,6 +63,7 @@ public class CallCenterService implements ICallCenterService {
 		} else {
 			
 			LOGGER.warn("Call agent not available at moment. Creating a new attempt for call request: {}", callRequest.getId());
+			callRequest.addAttempt();
 			queueService.putNewCallAttempt(callRequest);
 		}
 	}
